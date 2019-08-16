@@ -1,1 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+$HGGGothicssi40g_eot_path : "./assets/font/HGGGothicssi_40g.eot";
+$HGGGothicssi40g_ttf_path : "./assets/font/HGGGothicssi_40g.ttf";
+$HGGGothicssi40g_woff_path : "./assets/font/HGGGothicssi_40g.woff";
+
+$HGGGothicssi60g_eot_path : "./assets/font/HGGGothicssi_60g.eot";
+$HGGGothicssi60g_ttf_path : "./assets/font/HGGGothicssi_60g.ttf";
+$HGGGothicssi60g_woff_path : "./assets/font/HGGGothicssi_60g.woff";
+
+$YoonGothicPro740_eot_path : "./assets/font/YoonGothicPro740.eot";
+$YoonGothicPro740_ttf_path : "./assets/font/YoonGothicPro740.ttf";
+$YoonGothicPro740_woff_path : "./assets/font/YoonGothicPro740.woff";
+
+$YoonGothicPro760_eot_path : "./assets/font/YoonGothicPro760.eot";
+$YoonGothicPro760_ttf_path : "./assets/font/YoonGothicPro760.ttf";
+$YoonGothicPro760_woff_path : "./assets/font/YoonGothicPro760.woff";
+
+@font-face {
+    font-family: 'HGGGothicssi40g';
+    src: url($HGGGothicssi40g_eot_path),
+       url($HGGGothicssi40g_woff_path) format('woff'),
+       url($HGGGothicssi40g_ttf_path)  format('truetype')
+}
+@font-face {
+    font-family: 'HGGGothicssi60g';
+    src: url($HGGGothicssi60g_eot_path),
+       url($HGGGothicssi60g_woff_path) format('woff'),
+       url($HGGGothicssi60g_ttf_path)  format('truetype')
+}
+@font-face {
+    font-family: 'YoonGothicPro740';
+    src: url($YoonGothicPro740_eot_path),
+       url($YoonGothicPro740_woff_path) format('woff'),
+       url($YoonGothicPro740_ttf_path)  format('truetype')
+}
+@font-face {
+    font-family: 'YoonGothicPro760';
+    src: url($YoonGothicPro760_eot_path),
+       url($YoonGothicPro760_woff_path) format('woff'),
+       url($YoonGothicPro760_ttf_path)  format('truetype')
+}

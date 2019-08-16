@@ -1,0 +1,25 @@
+$text_primary_color: #ffffff;
+
+footer{
+    background-image: url('../../assets/img/img_btmbg.png');
+    height: 224px;
+    background-size: cover;
+    background-position: center; 
+    
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: $text_primary_color;
+    .footerTitleEnglish{
+        font-family: YoonGothicPro740;
+        font-size: 18px;
+        line-height: 0.89;
+    }
+    .footerTitleKorean{
+        font-family: HGGGothicssi60g;
+        font-size: 28px;
+        line-height: 1.29;
+    }
+}

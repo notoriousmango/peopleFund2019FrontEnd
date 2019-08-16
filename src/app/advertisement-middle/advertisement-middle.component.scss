@@ -1,0 +1,40 @@
+$font_primary : #2e303b;
+$font_secondary : #0a7ec2;
+
+#mainBody{
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: $font_primary;
+    .highlight{
+        background: yellowgreen;
+        position: absolute;
+        height: 5em;
+        width: 30em;
+        top: 900px;
+        z-index: 0;
+    }
+    .title{
+        font-family: HGGGothicssi60g;
+        font-size: 28px;
+        line-height: 1.57;
+        z-index: 1;
+    }
+    .body{
+        font-family: YoonGothicPro760;
+        font-size: 18px;
+        line-height: 2.11;
+
+        strong{
+            font-family: Lato;
+            font-size: 24px;
+            color: $font_secondary
+        }
+    }
+    .graph{
+        width: 596px;
+        height: 296.9px;
+    }
+}
