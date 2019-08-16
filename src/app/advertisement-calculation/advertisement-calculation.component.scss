@@ -1,0 +1,200 @@
+$bg_primary : #0a7ec2;
+$bg_secondary : white;
+
+.button{
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 3px;
+    color: black;
+}
+article {
+
+    background: linear-gradient(180deg, $bg_primary 80%, $bg_secondary 20%);
+    margin-bottom: 100px;
+    .card {
+        width: 288px;
+        height: 363px;
+        border-radius: 6px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15);
+        background-color: #ffffff;
+    }
+
+    @media (max-width:1600px) {
+        .card {
+            flex-basis: 40%;
+        }
+    }
+
+    .inputDiv {
+        display: inline-block;
+        position: relative;
+    }
+
+    .inputDiv::after {
+        position: absolute;
+        top: 2px;
+        right: .5em;
+        transition: all .05s ease-in-out;
+        content: '만원';
+    }
+
+    .input {
+        background-color: transparent;
+        color: #eeeeee;
+        outline: none;
+        outline-style: none;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: solid #eeeeee 1px;
+        padding: 3px 10px;
+    }
+
+    .calculate {
+        @extend .button;
+        background-color: #ffffff;
+    }
+
+    .card {
+        .title {
+            font-family: YoonGothicPro760;
+            font-size: 15px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: #0a7ec2;
+        }
+
+        .subTitle {
+            font-family: Lato;
+            font-size: 18px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: #2e303b;
+
+            span {
+                font-family: YoonGothicPro740;
+                font-weight: normal;
+            }
+        }
+
+        .description {
+            font-family: YoonGothicPro740;
+            font-size: 13px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.54;
+            letter-spacing: normal;
+            text-align: left;
+            color: #6a6a6a;
+        }
+
+        .total {
+            font-family: Lato;
+            font-size: 15px;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1;
+            letter-spacing: normal;
+            text-align: left;
+            color: #342b2b;
+
+            .collectGold {
+                // ㅋㅋㅋ
+                font-family: YoonGothicPro760;
+                font-size: 15px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1;
+                letter-spacing: normal;
+                text-align: left;
+                color: #6a6a6a;
+            }
+
+            .manWon {
+                font-family: YoonGothicPro760;
+                font-weight: normal;
+            }
+        }
+
+        .calaulationDiv {
+            display: flex;
+
+            .divider {
+                flex: 1 1 auto;
+            }
+
+            .calculationTitle {
+                font-size: 13px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 2.15;
+                letter-spacing: normal;
+                text-align: left;
+                color: #342b2b;
+            }
+
+            .profitTitle {
+                font-family: YoonGothicPro760;
+            }
+
+            .feeTitle {
+                font-family: YoonGothicPro740;
+            }
+
+            .taxTitle {
+                font-family: YoonGothicPro740;
+            }
+
+            .number {
+                font-family: Lato;
+                font-size: 15px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.87;
+                letter-spacing: normal;
+                text-align: right;
+                color: #342b2b;
+            }
+
+            .bold {
+                font-weight: bold !important;
+            }
+        }
+        .detailDiv{
+            width:100%;
+            .detailButton{
+                @extend .button;
+                align-content: center;
+                border-radius: 3px;
+                background-color: #0a7ec2;
+                font-family: YoonGothicPro740;
+                font-size: 13px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: center;
+                color: #ffffff;
+            }
+        }
+    }
+}

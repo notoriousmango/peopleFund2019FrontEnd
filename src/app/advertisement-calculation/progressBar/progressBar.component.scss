@@ -1,0 +1,13 @@
+$progress_bar_color : #0a7ec2;
+$progress_background : #e5e5e5;
+.bar {
+    background-color: $progress_bar_color;
+    height: 100%;
+}
+
+:host {
+    background-color: $progress_background;
+    display: block;
+    height: 2px;
+    width: 100%;
+}

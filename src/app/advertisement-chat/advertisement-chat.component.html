@@ -1,3 +1,24 @@
-<p>
-  advertisement-chat works!
-</p>
+<article fxLayout="column" fxLayoutAlign="center center">
+  <div fxLayout="column" fxLayoutAlign="center center">
+    <p>{{boxTitleFirst}}</p>
+    <p>{{boxTitleSecond}}</p>
+  </div>
+  <ng-container *ngFor="let chat of chats; let i=index">
+    <div>
+      <p>{{chat.body}}</p>
+      <ng-container *ngIf="i % 2 === 0; else right">
+        <div fxLayout="row" fxLayoutAlign="end end">
+          <p>{{chat.name}}, {{chat.age}}세</p>
+          <img src={{chat.img}}>
+        </div>
+      </ng-container>
+      <ng-template #right>
+        <div fxLayout="row" fxLayoutAlign="start start">
+          <img src={{chat.img}}>
+          <p>{{chat.name}}, {{chat.age}}세</p>
+        </div>
+      </ng-template>
+      
+    </div>
+  </ng-container>
+</article>

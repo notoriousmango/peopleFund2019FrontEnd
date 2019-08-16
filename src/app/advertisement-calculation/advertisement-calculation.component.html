@@ -1,3 +1,39 @@
-<p>
-  advertisement-calculation works!
-</p>
+
+<article>
+  <div fxLayout="column wrap" fxLayoutAlign="center center">
+    <p>{{titleFist}}</p>
+    <p>{{titleSecond}}</p>
+  </div>
+  <div fxLayout="column" fxLayoutAlign="center center">
+    <div>
+      <p>투자금액</p>
+      <div fxLayout="row">
+        <div class="inputDiv">
+            <input class="input" type="number" min="10" max="1000" step="10" [(ngModel)]="investMoney">
+        </div>
+          <button class="calculate" (click)="calculateInvestment(products,investMoney)">계산하기</button>
+      </div>
+    </div>
+  </div>
+  <div fxLayout="row wrap" fxLayoutAlign="space-around start">
+    <div class="card" *ngFor="let product of products">
+      <p class="title">{{product.title}}</p>
+      <p class="subTitle"><span>연</span> {{product.interest_rate}} / {{product.month}}개월</p>
+      <p class="description">{{product.description}}</p>
+      <p class="total"><span class="collectGold">모집금</span> {{(product.invest_amount / manWon)| moneyToString}} <span class="manWon">만원</span> </p>
+      <app-progressBar [width]="product.percentage"></app-progressBar>
+      <div class="calaulationDiv">
+          <span class="profitTitle calculationTitle">예상 총 수익</span><span class="divider"></span> <span class="bold number">{{product.expectedProfit |moneyToString}}</span><span class="unit">원</span>
+      </div>
+      <div class="calaulationDiv">
+          <span class="feeTitle calculationTitle">수수료</span><span class="divider"></span> <span class="number">{{product.fee}}</span><span class="unit">원</span>
+      </div>
+      <div class="calaulationDiv">
+          <span class="taxTitle calculationTitle">세금</span> <span class="divider"></span> <span class="number">{{product.tax}}</span><span class="unit">원</span>
+      </div>
+      <div class="detailDiv" fxLayout="row" fxLayoutAlign="center center">
+          <button class="detailButton" (click)="openURL(product.url)">{{buttonString}}</button>
+      </div>
+    </div> 
+  </div>     
+</article>
