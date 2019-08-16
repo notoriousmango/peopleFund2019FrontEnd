@@ -1,21 +1,28 @@
 <article fxLayout="column" fxLayoutAlign="center center">
-  <div fxLayout="column" fxLayoutAlign="center center">
-    <p>{{boxTitleFirst}}</p>
-    <p>{{boxTitleSecond}}</p>
+  <div class="titleDiv" fxLayout="column" fxLayoutAlign="center center">
+    <p class="title">{{boxTitleFirst}}</p>
+    <p class="title">{{boxTitleSecond}}</p>
   </div>
   <ng-container *ngFor="let chat of chats; let i=index">
     <div>
-      <p>{{chat.body}}</p>
+      <ng-container *ngIf="i % 2 === 0; else rightTail"> 
+        <p class="chatBody yellowBody">{{chat.body}}</p>
+        <img class="rightTail" src="../../assets/img/img_tail2@2x.png">
+      </ng-container>
+      <ng-template #rightTail>
+        <p class="chatBody blueBody">{{chat.body}}</p>
+        <img class="leftTail" src="../../assets/img/img_tail1@2x.png">
+      </ng-template>
       <ng-container *ngIf="i % 2 === 0; else right">
-        <div fxLayout="row" fxLayoutAlign="end end">
-          <p>{{chat.name}}, {{chat.age}}세</p>
+        <div class="infoBox"  fxLayout="row" fxLayoutAlign="end center">
+          <p class="info infoRight">{{chat.name}}, {{chat.age}}세</p>
           <img src={{chat.img}}>
         </div>
       </ng-container>
       <ng-template #right>
-        <div fxLayout="row" fxLayoutAlign="start start">
+        <div class="infoBox" fxLayout="row" fxLayoutAlign="start center">
           <img src={{chat.img}}>
-          <p>{{chat.name}}, {{chat.age}}세</p>
+          <p class="info infoLeft">{{chat.name}}, {{chat.age}}세</p>
         </div>
       </ng-template>
       

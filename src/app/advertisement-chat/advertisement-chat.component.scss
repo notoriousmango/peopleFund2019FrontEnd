@@ -1,3 +1,93 @@
-article{
+$yellow : #fff7d9;
+$blue :#d9f1ff;
+:host {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+article {
     border: solid 4px #0a7ec2;
+    margin-top:100px;
+    margin-bottom: 100px;
+    width: 640px;
+    .titleDiv{
+        position: relative;
+        top: -50px;
+        background: white;
+        padding: 0px 30px;
+        .title {
+            font-family: HGGGothicssi60g;
+            font-size: 28px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.43;
+            letter-spacing: normal;
+            text-align: center;
+            color: #0a7ec2;
+            margin:0px;
+        }
+    }
+    
+
+    .chatBody {
+        margin: 0px 40px;
+        font-family: YoonGothicPro740;
+        font-size: 15px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.6;
+        letter-spacing: normal;
+        text-align: left;
+        color: #2e303b;
+        padding: 10px 30px 20px 20px;
+        border-radius: 10px;
+    }
+    .yellowBody{
+        background-color: $yellow;
+    }
+    .blueBody{
+        background-color : $blue;
+    }
+    .infoBox{
+        margin: 0px 40px;
+    }
+    .rightTail{
+        margin-right: 50px;
+        margin-bottom:10px;
+        margin-left: auto;
+        display: block;
+    }
+    .leftTail{
+        margin-left: 50px;
+        margin-bottom:10px;
+    }
+    .infoBox{
+        margin-bottom: 20px;
+        .info {
+            font-family: YoonGothicPro740;
+            font-size: 13px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.54;
+            letter-spacing: normal;
+            text-align: left;
+            color: #6a6a6a;
+            margin:0px;
+        }
+        .infoRight{
+            margin-right: 10px;
+        }
+        .infoLeft{
+            margin-left: 10px;
+        }
+        img{
+            width: 50px;
+            height: 50px;
+        }
+    }
+    
 }
