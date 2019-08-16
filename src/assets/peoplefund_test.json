@@ -1,0 +1,48 @@
+{
+    "list" : [
+        {
+            "title": "개인채권 트렌치A",
+            "category": "트렌치A",
+            "total_amount": 35000000,
+            "invest_amount": 10300000,
+            "interest_rate": 11,
+            "month": 6,
+            "commission": 1.2,
+            "description": "우량한 1금융권 개인채권만 모아 안정적인 선순위에 투자합니다.",
+            "url": "www.peoplefund.co.kr/showcase/ta150"
+        },
+        {
+            "title": "부동산 담보채권",
+            "category": "부동산",
+            "total_amount": 52000000,
+            "invest_amount": 23500000,
+            "interest_rate": 17,
+            "month": 8,
+            "commission": 0,
+            "description": "엄격하게 심사된 높은 수익률의 부동산, 이제 쉽고 간편하게 투자할 수 있습니다.",
+            "url": "www.peoplefund.co.kr/showcase/sr202"
+        },
+        {
+            "title": "홈쇼핑 담보채권",
+            "category": "홈쇼핑",
+            "total_amount": 200000000,
+            "invest_amount": 200000000,
+            "interest_rate": 15,
+            "month": 7,
+            "commission": 0.6,
+            "description": "2018년 여름시즌을 겨냥한 인기 브랜드의 홈쇼핑 매출채권 정산을 통해 상환받는 상품입니다.",
+            "url": "www.peoplefund.co.kr/showcase/hs016"
+        },
+        {
+            "title": "태양광 채권",
+            "category": "중소기업",
+            "total_amount":  90000000,
+            "invest_amount": 10300000,
+            "interest_rate": 17,
+            "month": 5,
+            "commission": 1.2,
+            "description": "대형기관들이 주목하는 대체투자, ‘태양광 발전사업’에 투자하는 상품입니다.",
+            "url": "www.peoplefund.co.kr/showcase/ss050"
+        }
+    ]
+}
