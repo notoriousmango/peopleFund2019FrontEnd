@@ -20,4 +20,8 @@ export class AdvertisementTopComponent implements OnInit {
   ngOnInit() {
   }
 
+  public openHome() {
+    window.open(`https://peoplefund.co.kr`, '_blank');
+  }
+
 }

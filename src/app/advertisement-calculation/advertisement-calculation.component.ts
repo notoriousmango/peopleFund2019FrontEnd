@@ -35,7 +35,6 @@ export class AdvertisementCalculationComponent implements OnInit {
     });
   }
   public openURL(url: string) {
-    
     window.open(`https://${url}`, '_blank');
   }
 }

@@ -1,6 +1,6 @@
 $font_primary : #2e303b;
 $font_secondary : #0a7ec2;
-
+$sunYellow : #f8e71c;
 #mainBody{
     font-weight: normal;
     font-style: normal;
@@ -8,12 +8,13 @@ $font_secondary : #0a7ec2;
     letter-spacing: normal;
     text-align: center;
     color: $font_primary;
+    margin-bottom: 200px;
     .highlight{
-        background: yellowgreen;
-        position: absolute;
-        height: 5em;
-        width: 30em;
-        top: 900px;
+        background: $sunYellow;
+        position: relative;
+        height: 1em;
+        width: 25em;
+        top: -57px;
         z-index: 0;
     }
     .title{
@@ -26,7 +27,7 @@ $font_secondary : #0a7ec2;
         font-family: YoonGothicPro760;
         font-size: 18px;
         line-height: 2.11;
-
+        margin-bottom: 50px;
         strong{
             font-family: Lato;
             font-size: 24px;

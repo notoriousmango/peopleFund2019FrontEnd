@@ -1,17 +1,8 @@
+@import '../app.component.scss';
 $bg_primary : #0a7ec2;
 $bg_secondary : white;
 
-.button{
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 3px;
-    color: black;
-}
+
 article {
 
     background: linear-gradient(180deg, $bg_primary 80%, $bg_secondary 20%);

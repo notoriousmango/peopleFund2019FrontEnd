@@ -1,9 +1,16 @@
+@import '../app.component.scss';
 $primary_background : #032d57;
-#top_top{
+
+#top_top {
     background-image: url('../../assets/img/img_topbg.png');
     height: 511px;
     background-repeat: no-repeat;
-    .subTitle{
+    background-size: 100% 511px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    // background-position: center center;
+    .subTitle {
         font-family: YoonGothicPro740;
         font-size: 24px;
         font-weight: normal;
@@ -13,9 +20,11 @@ $primary_background : #032d57;
         letter-spacing: -0.8px;
         text-align: center;
         color: #ffffff;
+        margin-top:145px;
     }
-    #titleDiv{
-        .title{
+
+    #titleDiv {
+        .title {
             font-family: HGGGothicssi60g;
             font-size: 56px;
             font-weight: normal;
@@ -25,21 +34,29 @@ $primary_background : #032d57;
             letter-spacing: -1.4px;
             text-align: center;
             color: #ffffff;
+            margin-top:0px;
         }
-        .titleFirstSection{
+
+        .titleFirstSection {
             color: #373533;
             font-weight: 800 !important;
         }
-        .titleSecondSection{
+
+        .titleSecondSection {
             font-weight: 800 !important;
         }
     }
-    .phone{
-        width: 261.8px;
-        height: 318.8px;
+
+    .phone {
+        width: 426px;
+        height: 319px;
+        position: relative;
+        top: 70px;
     }
 }
-#top_bottom{
+
+#top_bottom {
+    height: 509px;
     background-color: $primary_background;
     font-weight: normal;
     font-style: normal;
@@ -48,23 +65,23 @@ $primary_background : #032d57;
     letter-spacing: normal;
     text-align: center;
     color: #ffffff;
-    .bodyBefore{
+
+    .bodyBefore {
         font-family: HGGGothicssi40g;
         font-size: 24px;
+        margin-bottom: 10px;
     }
-    .bodyText{
+
+    .bodyText {
         font-family: HGGGothicssi60g;
         font-size: 32px;
+        margin-top: 0px;
     }
-    button{
+
+    button {
+        @extend .button;
+        width: 358px;
         background-color: #ffffff;
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        border-radius: 3px;
         font-family: YoonGothicPro740;
         font-size: 15px;
         font-weight: normal;
@@ -74,5 +91,18 @@ $primary_background : #032d57;
         letter-spacing: normal;
         text-align: center;
         color: $primary_background;
+        &:hover{
+            cursor:pointer;
+        }
+        
+    }
+}
+.scrollDown{
+    position: relative;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    &:hover{
+        cursor: pointer;
     }
 }

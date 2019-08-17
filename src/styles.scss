@@ -39,3 +39,8 @@ $YoonGothicPro760_woff_path : "./assets/font/YoonGothicPro760.woff";
        url($YoonGothicPro760_woff_path) format('woff'),
        url($YoonGothicPro760_ttf_path)  format('truetype')
 }
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
