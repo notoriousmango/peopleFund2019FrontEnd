@@ -12,6 +12,7 @@ import { AdvertisementCalculationComponent } from './advertisement-calculation/a
 import { MoneyToStringPipe } from './moneyToString.pipe';
 import { ProgressBarComponent } from './advertisement-calculation/progressBar/progressBar.component';
 import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
+import { ProductCardComponent } from './advertisement-calculation/productCard/productCard.component';
 @NgModule({
    declarations: [
       AppComponent,
@@ -21,6 +22,7 @@ import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
       AdvertisementChatComponent,
       AdvertisementCalculationComponent,
       ProgressBarComponent,
+      ProductCardComponent,
       MoneyToStringPipe,
    ],
    imports: [

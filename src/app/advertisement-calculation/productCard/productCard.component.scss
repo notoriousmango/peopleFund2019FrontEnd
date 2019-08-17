@@ -1,0 +1,172 @@
+@import '../../app.component.scss';
+@media (max-width:1300px) {
+    :host {
+        min-width: 250px;
+        flex-basis: 40%;
+        margin-top:30px;
+    }
+    .card{
+        width:auto !important;
+    }
+}
+.card {
+    width: 300px;
+    min-width: 250px;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
+
+    .title {
+        font-family: YoonGothicPro760;
+        font-size: 15px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #0a7ec2;
+    }
+
+    .subTitle {
+        font-family: Lato;
+        font-size: 18px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #2e303b;
+
+        span {
+            font-family: YoonGothicPro740;
+            font-weight: normal;
+        }
+    }
+    .paddingX16px{
+        padding:0px 16px;
+    }
+    .description {
+        font-family: YoonGothicPro740;
+        font-size: 13px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.54;
+        letter-spacing: normal;
+        text-align: left;
+        color: #6a6a6a;
+        min-height: 50px;
+    }
+    .garnish{
+        width: 14px;
+        height: 2px;
+        background-color: #0a7ec2;
+    }
+    .total {
+        font-family: Lato;
+        font-size: 15px;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1;
+        letter-spacing: normal;
+        text-align: left;
+        color: #342b2b;
+
+        .collectGold {
+            font-family: YoonGothicPro760;
+            font-size: 15px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1;
+            letter-spacing: normal;
+            text-align: left;
+            color: #6a6a6a;
+            margin-right: 5px;
+        }
+
+        .manWon {
+            font-family: YoonGothicPro760;
+            font-weight: normal;
+        }
+    }
+
+    .calaulationDiv {
+        display: flex;
+        align-items: center;
+        
+        .divider {
+            flex: 1 1 auto;
+        }
+
+        .calculationTitle {
+            font-size: 13px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 2.15;
+            letter-spacing: normal;
+            text-align: left;
+            color: #342b2b;
+        }
+
+        .profitTitle {
+            font-family: YoonGothicPro760;
+        }
+
+        .feeTitle {
+            font-family: YoonGothicPro740;
+        }
+
+        .taxTitle {
+            font-family: YoonGothicPro740;
+        }
+
+        .number {
+            font-family: Lato;
+            font-size: 15px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.87;
+            letter-spacing: normal;
+            text-align: right;
+            color: #342b2b;
+        }
+
+        .bold {
+            font-weight: bold !important;
+        }
+    }
+
+    .detailDiv {
+        width: 100%;
+        margin-top: 30px;
+        .detailButton {
+            @include buttonSecondary;
+            align-content: center;
+            border-radius: 3px;
+            background-color: #0a7ec2;
+            font-family: YoonGothicPro740;
+            font-size: 13px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: #ffffff;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width:768px){
+    :host{
+        margin:0px;
+    }
+}

@@ -3,9 +3,10 @@ $bg_primary : #0a7ec2;
 $bg_secondary : white;
 
 @media (min-width:769px){
-    article {
+    .calculationArticle {
         padding-top: 50px;
-    
+        background: linear-gradient(180deg, $bg_primary 90%, $bg_secondary 10%);
+        margin-bottom: 100px;
         .body {
             margin-bottom: 70px;
     
@@ -23,18 +24,7 @@ $bg_secondary : white;
             }
         }
     
-        background: linear-gradient(180deg, $bg_primary 90%, $bg_secondary 10%);
-        margin-bottom: 100px;
     
-        @media (max-width:1300px) {
-            .card {
-                
-                width: 300px;
-                min-width: 250px;
-                flex-basis: 40%;
-                margin-top:30px;
-            }
-        }
     
         .intereactionDiv {
             .inputAndButtonDiv {
@@ -279,12 +269,16 @@ $bg_secondary : white;
                 }
             }
         }
+        .cardGroupResolutionLow{
+            display:none !important;
+            opacity: 0 !important;
+        }
     }
     
 }
 
 @media (min-width: 320px) and (max-width:768px){
-    article {
+    .calculationArticle {
         padding-top: 50px;
     
         .body {
@@ -307,15 +301,6 @@ $bg_secondary : white;
         background: $bg_primary;
         margin-bottom: 100px;
     
-        @media (max-width:1300px) {
-            .card {
-                
-                width: 300px;
-                min-width: 250px;
-                flex-basis: 40%;
-                margin-top:30px;
-            }
-        }
     
         .intereactionDiv {
             .inputAndButtonDiv {
@@ -406,191 +391,38 @@ $bg_secondary : white;
         .cardGroupResolutionHigh{
             display:none !important;
         }
+        
         .cardGroupResolutionLow {
+            span.swiper-pagination-bullet.swiper-pagination-bullet-active{
+                background:white !important;
+            }
             padding-top: 50px;
             max-width: 1500px;
-            height:500px;
+            height:600px;
             margin:auto;
             swiper {
-                height: 300px;
-                width: 400px;
+                height: 450px;
+                min-width: 320px;
             }
-            .swiper-container {
-                width: 100%;
-                height: 100%;
-              }
-              .swiper-slide {
-                text-align: center;
-                font-size: 18px;
-                background: #fff;
-                /* Center slide text vertically */
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: -webkit-flex;
-                display: flex;
-                -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                -webkit-justify-content: center;
-                justify-content: center;
-                -webkit-box-align: center;
-                -ms-flex-align: center;
-                -webkit-align-items: center;
-                align-items: center;
-              }
-            .card {
-                width: 300px;
-                min-width: 250px;
-                border-radius: 6px;
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15);
-                background-color: #ffffff;
-    
-                .title {
-                    font-family: YoonGothicPro760;
-                    font-size: 15px;
-                    font-weight: normal;
-                    font-style: normal;
-                    font-stretch: normal;
-                    line-height: normal;
-                    letter-spacing: normal;
-                    text-align: center;
-                    color: #0a7ec2;
-                }
-    
-                .subTitle {
-                    font-family: Lato;
-                    font-size: 18px;
-                    font-weight: normal;
-                    font-style: normal;
-                    font-stretch: normal;
-                    line-height: normal;
-                    letter-spacing: normal;
-                    text-align: center;
-                    color: #2e303b;
-    
-                    span {
-                        font-family: YoonGothicPro740;
-                        font-weight: normal;
-                    }
-                }
-                .paddingX16px{
-                    padding:0px 16px;
-                }
-                .description {
-                    font-family: YoonGothicPro740;
-                    font-size: 13px;
-                    font-weight: normal;
-                    font-style: normal;
-                    font-stretch: normal;
-                    line-height: 1.54;
-                    letter-spacing: normal;
-                    text-align: left;
-                    color: #6a6a6a;
-                    min-height: 50px;
-                }
-                .garnish{
-                    width: 14px;
-                    height: 2px;
-                    background-color: #0a7ec2;
-                }
-                .total {
-                    font-family: Lato;
-                    font-size: 15px;
-                    font-weight: 500;
-                    font-style: normal;
-                    font-stretch: normal;
-                    line-height: 1;
-                    letter-spacing: normal;
-                    text-align: left;
-                    color: #342b2b;
-    
-                    .collectGold {
-                        font-family: YoonGothicPro760;
-                        font-size: 15px;
-                        font-weight: normal;
-                        font-style: normal;
-                        font-stretch: normal;
-                        line-height: 1;
-                        letter-spacing: normal;
-                        text-align: left;
-                        color: #6a6a6a;
-                        margin-right: 5px;
-                    }
-    
-                    .manWon {
-                        font-family: YoonGothicPro760;
-                        font-weight: normal;
-                    }
-                }
-    
-                .calaulationDiv {
-                    display: flex;
-                    align-items: center;
-                    
-                    .divider {
-                        flex: 1 1 auto;
-                    }
-    
-                    .calculationTitle {
-                        font-size: 13px;
-                        font-weight: normal;
-                        font-style: normal;
-                        font-stretch: normal;
-                        line-height: 2.15;
-                        letter-spacing: normal;
-                        text-align: left;
-                        color: #342b2b;
-                    }
-    
-                    .profitTitle {
-                        font-family: YoonGothicPro760;
-                    }
-    
-                    .feeTitle {
-                        font-family: YoonGothicPro740;
-                    }
-    
-                    .taxTitle {
-                        font-family: YoonGothicPro740;
-                    }
-    
-                    .number {
-                        font-family: Lato;
-                        font-size: 15px;
-                        font-weight: normal;
-                        font-style: normal;
-                        font-stretch: normal;
-                        line-height: 1.87;
-                        letter-spacing: normal;
-                        text-align: right;
-                        color: #342b2b;
-                    }
-    
-                    .bold {
-                        font-weight: bold !important;
-                    }
-                }
-    
-                .detailDiv {
-                    width: 100%;
-                    margin-top: 30px;
-                    .detailButton {
-                        @include buttonSecondary;
-                        align-content: center;
-                        border-radius: 3px;
-                        background-color: #0a7ec2;
-                        font-family: YoonGothicPro740;
-                        font-size: 13px;
-                        font-weight: normal;
-                        font-style: normal;
-                        font-stretch: normal;
-                        line-height: normal;
-                        letter-spacing: normal;
-                        text-align: center;
-                        color: #ffffff;
-                        width: 100%;
-                        margin-bottom: 30px;
-                    }
-                }
+            .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            background-color: $bg_primary;
+            height:400px;
             }
         }
     }

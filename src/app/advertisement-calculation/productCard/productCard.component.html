@@ -1,0 +1,24 @@
+<div class="card" *ngIf="product !== null">
+  <p class="title">{{product.title}}</p>
+  <p class="subTitle"><span>연</span> {{product.interest_rate}}% / {{product.month}}개월</p>
+  <div fxLayout="row" fxLayoutAlign="center center">
+    <div  class="garnish"></div>
+  </div>
+  <p class="description paddingX16px">{{product.description}}</p>
+  <p class="total paddingX16px"><span class="collectGold">모집금</span> {{(product.invest_amount / manWon)| moneyToString}} <span class="manWon">만원</span> </p>
+  <div class="paddingX16px">
+    <app-progressBar [width]="product.percentage" ></app-progressBar>
+  </div>
+  <div class="calaulationDiv paddingX16px">
+      <span class="profitTitle calculationTitle">예상 총 수익</span><span class="divider"></span> <span class="bold number">{{product.expectedProfit | moneyToString}}</span><span class="unit">원</span>
+  </div>
+  <div class="calaulationDiv paddingX16px">
+      <span class="feeTitle calculationTitle">수수료</span><span class="divider"></span> <span class="number">{{product.fee | moneyToString}}</span><span class="unit">원</span>
+  </div>
+  <div class="calaulationDiv paddingX16px">
+      <span class="taxTitle calculationTitle">세금</span> <span class="divider"></span> <span class="number">{{product.tax | moneyToString}}</span><span class="unit">원</span>
+  </div>
+  <div class="detailDiv paddingX16px" fxLayout="row" fxLayoutAlign="center center">
+      <button class="detailButton" (click)="openURL(product.url)">{{buttonString}}</button>
+  </div>
+</div> 

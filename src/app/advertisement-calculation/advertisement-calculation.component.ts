@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit, ElementRef, ChangeDetectorRef, AfterViewChecked } from '@angular/core';
+import { Component, OnInit, AfterViewInit, ElementRef, ChangeDetectorRef, AfterViewChecked, ViewEncapsulation } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
@@ -7,7 +7,8 @@ import Swiper, { SwiperOptions } from 'swiper';
 @Component({
   selector: 'app-advertisement-calculation',
   templateUrl: './advertisement-calculation.component.html',
-  styleUrls: ['./advertisement-calculation.component.scss']
+  styleUrls: ['./advertisement-calculation.component.scss'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class AdvertisementCalculationComponent implements OnInit, AfterViewInit {
   public titleFist = '피플펀드 대표 상품의';
