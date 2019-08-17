@@ -28,7 +28,11 @@ article {
 
     @media (max-width:1300px) {
         .card {
+            
+            width: 300px;
+            min-width: 250px;
             flex-basis: 40%;
+            margin-top:30px;
         }
     }
 
@@ -85,7 +89,7 @@ article {
         }
 
         .calculate {
-            @extend .button;
+            @include button;
             margin-left: 10px;
             background-color: #ffffff;
             font-family: YoonGothicPro740;
@@ -97,6 +101,7 @@ article {
             letter-spacing: normal;
             text-align: center;
             color: #032d57;
+            min-width:120px;
         }
 
         .inputLable {
@@ -166,7 +171,7 @@ article {
                 letter-spacing: normal;
                 text-align: left;
                 color: #6a6a6a;
-                min-width: 50px;
+                min-height: 50px;
             }
             .garnish{
                 width: 14px;
@@ -255,7 +260,7 @@ article {
                 width: 100%;
                 margin-top: 30px;
                 .detailButton {
-                    @extend .button;
+                    @include buttonSecondary;
                     align-content: center;
                     border-radius: 3px;
                     background-color: #0a7ec2;

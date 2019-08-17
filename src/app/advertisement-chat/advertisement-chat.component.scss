@@ -8,9 +8,8 @@ $blue :#d9f1ff;
 
 article {
     border: solid 4px #0a7ec2;
-    margin-top:100px;
-    margin-bottom: 100px;
-    width: 640px;
+    min-width:320px;
+    margin: 100px 50px;
     .titleDiv{
         position: relative;
         top: -50px;
@@ -29,8 +28,6 @@ article {
             margin:0px;
         }
     }
-    
-
     .chatBody {
         margin: 0px 40px;
         font-family: YoonGothicPro740;
@@ -51,9 +48,6 @@ article {
     .blueBody{
         background-color : $blue;
     }
-    .infoBox{
-        margin: 0px 40px;
-    }
     .rightTail{
         margin-right: 50px;
         margin-bottom:10px;
@@ -65,6 +59,7 @@ article {
         margin-bottom:10px;
     }
     .infoBox{
+        margin: 0px 40px;
         margin-bottom: 20px;
         .info {
             font-family: YoonGothicPro740;
@@ -89,5 +84,27 @@ article {
             height: 50px;
         }
     }
-    
+}
+
+@media (min-width: 320px) and (max-width:768px){
+    article{
+        .titleDiv{
+            position: relative;
+            top: -30px;
+            background: white;
+            padding: 0px 30px;
+            .title{
+                font-family: HGGGothicssi60g;
+                font-size: calc(18px + 0.5vw);
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.43;
+                letter-spacing: normal;
+                text-align: center;
+                color: #0a7ec2;
+                margin:0px;
+            }
+        }
+    }
 }

@@ -28,7 +28,7 @@ export class AdvertisementCalculationComponent implements OnInit {
   public calculateInvestment(products: Product[], investMoney: number) {
     products.forEach(product => {
       product.percentage = Math.round((product.invest_amount / product.total_amount) * 100);
-      const profit = investMoney * this.manWon * product.interest_rate * (product.month / 12);
+      const profit = investMoney * this.manWon * (product.interest_rate / 100) * (product.month / 12);
       product.fee = Math.round(profit * (product.commission / 100));
       product.tax = Math.round(profit * this.taxRate);
       product.expectedProfit = Math.round(profit - product.fee - product.tax);

@@ -2,17 +2,21 @@
     <div id="top_top" fxLayout="column" fxLayoutAlign="center center">
         <p class="subTitle">{{subTitle}}</p>
         <div id="titleDiv" fxLayout="row">
-            <p class="title titleFirstSection">{{titleFirstSection}}&nbsp;</p>
-            <p class="title titleSecondSection">{{titleSecondSection}}&nbsp;</p>
-            <p class="title titleLastSection">{{titleLastSection}}</p>
+            <p class="title"><span class="titleFirstSection">{{titleFirstSection}}&nbsp;</span><span class="titleSecondSection">{{titleSecondSection}}&nbsp;</span ><span class="titleLastSection">{{titleLastSection}}</span></p>
         </div>
-        <img class="phone" src="../../assets/img/img_phone_pc@2x.png">
-
+        <picture>
+            <source srcset="../../assets/img/img_phone_pc.png 1x, ../../assets/img/img_phone_pc@2x.png 2x"
+                    media="(min-width: 769px)" />
+            <source srcset="../../assets/img/img_phone_m.png 1x, ../../assets/img/img_phone_m@2x.png 2x" 
+                    media="(min-width: 320px)" />
+            <img class="phone" src="../../assets/img/img_phone_pc.png" alt="Image of a phone"/>
+        </picture>
     </div>
     <div id="top_bottom" fxLayout="column" fxLayoutAlign="center center">
         <p class="bodyBefore">{{bodyBefore}}</p>
         <p class="bodyText">{{bodyText}}</p>
         <button (click)="openHome()">{{buttonText}}</button>
     </div>
-    <img class="scrollDown" src="../../assets/img/img_scrolldown@2x.png" (click)="scrollButtonClicked()">
+    
+    <img class="scrollDown" srcset="../../assets/img/img_scrolldown.png 1x, ../../assets/img/img_scrolldown@2x.png 2x" src="../../assets/img/img_scrolldown.png" (click)="scrollButtonClicked()" alt="Scroll to the calculate my benefit section">
 </div>

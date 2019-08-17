@@ -1,108 +1,226 @@
 @import '../app.component.scss';
 $primary_background : #032d57;
-
-#top_top {
-    background-image: url('../../assets/img/img_topbg.png');
-    height: 511px;
-    background-repeat: no-repeat;
-    background-size: 100% 511px;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-
-    // background-position: center center;
-    .subTitle {
-        font-family: YoonGothicPro740;
-        font-size: 24px;
-        font-weight: normal;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 1;
-        letter-spacing: -0.8px;
-        text-align: center;
-        color: #ffffff;
-        margin-top:145px;
-    }
-
-    #titleDiv {
-        .title {
-            font-family: HGGGothicssi60g;
-            font-size: 56px;
+@media (min-width:769px){
+    #top_top {
+        background-image: url('../../assets/img/img_topbg.png');
+        height: 511px;
+        background-repeat: no-repeat;
+        background-size: 100% 511px;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    
+        // background-position: center center;
+        .subTitle {
+            font-family: YoonGothicPro740;
+            font-size: 24px;
             font-weight: normal;
             font-style: normal;
             font-stretch: normal;
-            line-height: 0.71;
-            letter-spacing: -1.4px;
+            line-height: 1;
+            letter-spacing: -0.8px;
             text-align: center;
             color: #ffffff;
-            margin-top:0px;
+            margin-top:145px;
         }
-
-        .titleFirstSection {
-            color: #373533;
-            font-weight: 800 !important;
+    
+        #titleDiv {
+            .title {
+                font-family: HGGGothicssi60g;
+                font-size: 56px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 0.71;
+                letter-spacing: -1.4px;
+                text-align: center;
+                color: #ffffff;
+                margin-top:0px;
+            }
+    
+            .titleFirstSection {
+                color: #373533;
+                font-weight: 800 !important;
+            }
+    
+            .titleSecondSection {
+                font-weight: 800 !important;
+            }
         }
-
-        .titleSecondSection {
-            font-weight: 800 !important;
+    
+        .phone {
+            width: 426px;
+            height: 319px;
+            position: relative;
+            top: 60px;
         }
     }
-
-    .phone {
-        width: 426px;
-        height: 319px;
-        position: relative;
-        top: 70px;
-    }
-}
-
-#top_bottom {
-    height: 509px;
-    background-color: $primary_background;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: center;
-    color: #ffffff;
-
-    .bodyBefore {
-        font-family: HGGGothicssi40g;
-        font-size: 24px;
-        margin-bottom: 10px;
-    }
-
-    .bodyText {
-        font-family: HGGGothicssi60g;
-        font-size: 32px;
-        margin-top: 0px;
-    }
-
-    button {
-        @extend .button;
-        width: 358px;
-        background-color: #ffffff;
-        font-family: YoonGothicPro740;
-        font-size: 15px;
+    
+    #top_bottom {
+        height: 509px;
+        background-color: $primary_background;
         font-weight: normal;
         font-style: normal;
         font-stretch: normal;
-        line-height: normal;
+        line-height: 1.5;
         letter-spacing: normal;
         text-align: center;
-        color: $primary_background;
-        &:hover{
-            cursor:pointer;
+        color: #ffffff;
+    
+        .bodyBefore {
+            font-family: HGGGothicssi40g;
+            font-size: 24px;
+            margin-bottom: 10px;
         }
-        
+    
+        .bodyText {
+            font-family: HGGGothicssi60g;
+            font-size: 32px;
+            margin-top: 0px;
+        }
+    
+        button {
+            @include button;
+            width: 358px;
+            background-color: #ffffff;
+            font-family: YoonGothicPro740;
+            font-size: 15px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: $primary_background;
+            &:hover{
+                cursor:pointer;
+            }
+            
+        }
+    }
+    
+    .scrollDown{
+        position: relative;
+        top: -24px;
+        left: 50%;
+        transform: translateX(-50%);
+        &:hover{
+            cursor: pointer;
+        }
     }
 }
-.scrollDown{
-    position: relative;
-    top: -50px;
-    left: 50%;
-    transform: translateX(-50%);
-    &:hover{
-        cursor: pointer;
+
+@media (min-width: 320px) and (max-width:768px){
+    #top_top {
+        background-image: url('../../assets/img/img_topbg.png');
+        height: 408px;
+        background-repeat: no-repeat;
+        background-size: 100% 511px;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        padding-top : 150px;
+        // background-position: center center;
+        .subTitle {
+            font-family: YoonGothicPro740;
+            font-size: 24px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1;
+            letter-spacing: -0.8px;
+            text-align: center;
+            color: #ffffff;
+            margin-bottom : 30px;
+        }
+    
+        #titleDiv {
+            .title {
+                font-family: HGGGothicssi60g;
+                font-size: 56px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 0.71;
+                letter-spacing: -1.4px;
+                text-align: center;
+                color: #ffffff;
+                margin-top:0px;
+            }
+    
+            .titleFirstSection {
+                color: #373533;
+                font-weight: 800 !important;
+            }
+    
+            .titleSecondSection {
+                font-weight: 800 !important;
+            }
+            .titleLastSection{
+                display : block;
+                margin-top:30px;
+            }
+        }
+    
+        .phone {
+            width: 240px;
+            height: 240px;
+            position: relative;
+            top: -10px;
+        }
+    }
+    
+    #top_bottom {
+        height: 402px;
+        background-color: $primary_background;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+    
+        .bodyBefore {
+            font-family: HGGGothicssi40g;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+    
+        .bodyText {
+            font-family: HGGGothicssi60g;
+            font-size: 32px;
+            margin-top: 0px;
+        }
+    
+        button {
+            display:none !important;
+            @include button;
+            width: 358px;
+            background-color: #ffffff;
+            font-family: YoonGothicPro740;
+            font-size: 15px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: $primary_background;
+            &:hover{
+                cursor:pointer;
+            }
+            
+        }
+    }
+    
+    .scrollDown{
+        // TODO: remove next
+        display:none;
+        position: fixed;
+        top: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        &:hover{
+            cursor: pointer;
+        }
     }
 }

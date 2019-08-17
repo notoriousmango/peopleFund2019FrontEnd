@@ -28,13 +28,13 @@
         <app-progressBar [width]="product.percentage" ></app-progressBar>
       </div>
       <div class="calaulationDiv paddingX16px">
-          <span class="profitTitle calculationTitle">예상 총 수익</span><span class="divider"></span> <span class="bold number">{{product.expectedProfit |moneyToString}}</span><span class="unit">원</span>
+          <span class="profitTitle calculationTitle">예상 총 수익</span><span class="divider"></span> <span class="bold number">{{product.expectedProfit | moneyToString}}</span><span class="unit">원</span>
       </div>
       <div class="calaulationDiv paddingX16px">
-          <span class="feeTitle calculationTitle">수수료</span><span class="divider"></span> <span class="number">{{product.fee}}</span><span class="unit">원</span>
+          <span class="feeTitle calculationTitle">수수료</span><span class="divider"></span> <span class="number">{{product.fee | moneyToString}}</span><span class="unit">원</span>
       </div>
       <div class="calaulationDiv paddingX16px">
-          <span class="taxTitle calculationTitle">세금</span> <span class="divider"></span> <span class="number">{{product.tax}}</span><span class="unit">원</span>
+          <span class="taxTitle calculationTitle">세금</span> <span class="divider"></span> <span class="number">{{product.tax | moneyToString}}</span><span class="unit">원</span>
       </div>
       <div class="detailDiv paddingX16px" fxLayout="row" fxLayoutAlign="center center">
           <button class="detailButton" (click)="openURL(product.url)">{{buttonString}}</button>
