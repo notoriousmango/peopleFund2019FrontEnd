@@ -4,7 +4,7 @@
     <p class="title">{{boxTitleSecond}}</p>
   </div>
   <ng-container *ngFor="let chat of chats; let i=index">
-    <div>
+    <div class="chatGroup">
       <ng-container *ngIf="i % 2 === 0; else rightTail"> 
         <p class="chatBody yellowBody">{{chat.body}}</p>
         <img class="rightTail" src="../../assets/img/img_tail2@2x.png">

@@ -8,7 +8,7 @@ $blue :#d9f1ff;
 
 article {
     border: solid 4px #0a7ec2;
-    min-width:320px;
+    min-width:300px;
     margin: 100px 50px;
     .titleDiv{
         position: relative;
@@ -27,6 +27,9 @@ article {
             color: #0a7ec2;
             margin:0px;
         }
+    }
+    .chatGroup{
+        width:100%;
     }
     .chatBody {
         margin: 0px 40px;

@@ -2,281 +2,568 @@
 $bg_primary : #0a7ec2;
 $bg_secondary : white;
 
-
-article {
-    padding-top: 50px;
-
-    .body {
-        margin-bottom: 70px;
-
-        p {
-            margin: 0px;
-            font-family: HGGGothicssi60g;
-            font-size: 28px;
-            font-weight: normal;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: 1.57;
-            letter-spacing: normal;
-            text-align: center;
-            color: #ffffff;
-        }
-    }
-
-    background: linear-gradient(180deg, $bg_primary 90%, $bg_secondary 10%);
-    margin-bottom: 100px;
-
-    @media (max-width:1300px) {
-        .card {
-            
-            width: 300px;
-            min-width: 250px;
-            flex-basis: 40%;
-            margin-top:30px;
-        }
-    }
-
-    .intereactionDiv {
-        .inputAndButtonDiv {
-
-            height: 50px;
-        }
-
-        .inputDiv {
-            display: inline-block;
-            position: relative;
-            height: 100%
-            
-        }
-
-        .inputDiv::after {
-            position: absolute;
-            top: 0.5em;
-            right: 0px;
-            color: white;
-            content: "만원";
-            font-size: 1.5em;
-        }
-
-        .input {
-            background-color: transparent;
-            color: #eeeeee;
-            outline: none;
-            outline-style: none;
-            border-top: none;
-            border-left: none;
-            border-right: none;
-            border-bottom: solid #eeeeee 1px;
-            padding: 3px 10px;
-            width: 400px;
-            height: 100%;
-            font-family: YoonGothicPro760;
-            font-size: 20px;
-            font-weight: normal;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: 0.9;
-            letter-spacing: normal;
-            text-align: left;
-            color: rgba(255, 255, 255, 0.5);
-            padding:0px;
-            -moz-appearance:textfield;
-        }
-        .input::-webkit-outer-spin-button,
-        .input::-webkit-inner-spin-button {
-            -webkit-appearance: none;
-            margin: 0;
-        }
-
-        .calculate {
-            @include button;
-            margin-left: 10px;
-            background-color: #ffffff;
-            font-family: YoonGothicPro740;
-            font-size: 15px;
-            font-weight: normal;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: 1;
-            letter-spacing: normal;
-            text-align: center;
-            color: #032d57;
-            min-width:120px;
-        }
-
-        .inputLable {
-            font-family: YoonGothicPro740;
-            font-size: 18px;
-            font-weight: normal;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: 1;
-            letter-spacing: normal;
-            text-align: left;
-            color: #ffffff;
-            margin: 0px;
-
-        }
-    }
-
-    .cardGroup {
+@media (min-width:769px){
+    article {
         padding-top: 50px;
-        max-width: 1500px;
-        margin:auto;
-        .card {
-            width: 300px;
-            min-width: 250px;
-            border-radius: 6px;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15);
-            background-color: #ffffff;
-
-            .title {
+    
+        .body {
+            margin-bottom: 70px;
+    
+            p {
+                margin: 0px;
+                font-family: HGGGothicssi60g;
+                font-size: 28px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.57;
+                letter-spacing: normal;
+                text-align: center;
+                color: #ffffff;
+            }
+        }
+    
+        background: linear-gradient(180deg, $bg_primary 90%, $bg_secondary 10%);
+        margin-bottom: 100px;
+    
+        @media (max-width:1300px) {
+            .card {
+                
+                width: 300px;
+                min-width: 250px;
+                flex-basis: 40%;
+                margin-top:30px;
+            }
+        }
+    
+        .intereactionDiv {
+            .inputAndButtonDiv {
+    
+                height: 50px;
+            }
+    
+            .inputDiv {
+                display: inline-block;
+                position: relative;
+                height: 100%
+                
+            }
+    
+            .inputDiv::after {
+                position: absolute;
+                top: 0.5em;
+                right: 0px;
+                color: white;
+                content: "만원";
+                font-size: 1.5em;
+            }
+    
+            .input {
+                background-color: transparent;
+                color: #eeeeee;
+                outline: none;
+                outline-style: none;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                border-bottom: solid #eeeeee 1px;
+                padding: 3px 10px;
+                width: 400px;
+                height: 100%;
                 font-family: YoonGothicPro760;
-                font-size: 15px;
+                font-size: 20px;
                 font-weight: normal;
                 font-style: normal;
                 font-stretch: normal;
-                line-height: normal;
-                letter-spacing: normal;
-                text-align: center;
-                color: #0a7ec2;
-            }
-
-            .subTitle {
-                font-family: Lato;
-                font-size: 18px;
-                font-weight: normal;
-                font-style: normal;
-                font-stretch: normal;
-                line-height: normal;
-                letter-spacing: normal;
-                text-align: center;
-                color: #2e303b;
-
-                span {
-                    font-family: YoonGothicPro740;
-                    font-weight: normal;
-                }
-            }
-            .paddingX16px{
-                padding:0px 16px;
-            }
-            .description {
-                font-family: YoonGothicPro740;
-                font-size: 13px;
-                font-weight: normal;
-                font-style: normal;
-                font-stretch: normal;
-                line-height: 1.54;
+                line-height: 0.9;
                 letter-spacing: normal;
                 text-align: left;
-                color: #6a6a6a;
-                min-height: 50px;
+                color: rgba(255, 255, 255, 0.5);
+                padding:0px;
+                -moz-appearance:textfield;
             }
-            .garnish{
-                width: 14px;
-                height: 2px;
-                background-color: #0a7ec2;
+            .input::-webkit-outer-spin-button,
+            .input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
             }
-            .total {
-                font-family: Lato;
+    
+            .calculate {
+                @include button;
+                margin-left: 10px;
+                background-color: #ffffff;
+                font-family: YoonGothicPro740;
                 font-size: 15px;
-                font-weight: 500;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1;
+                letter-spacing: normal;
+                text-align: center;
+                color: #032d57;
+                min-width:120px;
+            }
+    
+            .inputLable {
+                font-family: YoonGothicPro740;
+                font-size: 18px;
+                font-weight: normal;
                 font-style: normal;
                 font-stretch: normal;
                 line-height: 1;
                 letter-spacing: normal;
                 text-align: left;
-                color: #342b2b;
-
-                .collectGold {
+                color: #ffffff;
+                margin: 0px;
+    
+            }
+        }
+    
+        .cardGroup {
+            padding-top: 50px;
+            max-width: 1500px;
+            margin:auto;
+            .card {
+                width: 300px;
+                min-width: 250px;
+                border-radius: 6px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15);
+                background-color: #ffffff;
+    
+                .title {
                     font-family: YoonGothicPro760;
                     font-size: 15px;
-                    font-weight: normal;
-                    font-style: normal;
-                    font-stretch: normal;
-                    line-height: 1;
-                    letter-spacing: normal;
-                    text-align: left;
-                    color: #6a6a6a;
-                    margin-right: 5px;
-                }
-
-                .manWon {
-                    font-family: YoonGothicPro760;
-                    font-weight: normal;
-                }
-            }
-
-            .calaulationDiv {
-                display: flex;
-                align-items: center;
-                
-                .divider {
-                    flex: 1 1 auto;
-                }
-
-                .calculationTitle {
-                    font-size: 13px;
-                    font-weight: normal;
-                    font-style: normal;
-                    font-stretch: normal;
-                    line-height: 2.15;
-                    letter-spacing: normal;
-                    text-align: left;
-                    color: #342b2b;
-                }
-
-                .profitTitle {
-                    font-family: YoonGothicPro760;
-                }
-
-                .feeTitle {
-                    font-family: YoonGothicPro740;
-                }
-
-                .taxTitle {
-                    font-family: YoonGothicPro740;
-                }
-
-                .number {
-                    font-family: Lato;
-                    font-size: 15px;
-                    font-weight: normal;
-                    font-style: normal;
-                    font-stretch: normal;
-                    line-height: 1.87;
-                    letter-spacing: normal;
-                    text-align: right;
-                    color: #342b2b;
-                }
-
-                .bold {
-                    font-weight: bold !important;
-                }
-            }
-
-            .detailDiv {
-                width: 100%;
-                margin-top: 30px;
-                .detailButton {
-                    @include buttonSecondary;
-                    align-content: center;
-                    border-radius: 3px;
-                    background-color: #0a7ec2;
-                    font-family: YoonGothicPro740;
-                    font-size: 13px;
                     font-weight: normal;
                     font-style: normal;
                     font-stretch: normal;
                     line-height: normal;
                     letter-spacing: normal;
                     text-align: center;
-                    color: #ffffff;
+                    color: #0a7ec2;
+                }
+    
+                .subTitle {
+                    font-family: Lato;
+                    font-size: 18px;
+                    font-weight: normal;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: center;
+                    color: #2e303b;
+    
+                    span {
+                        font-family: YoonGothicPro740;
+                        font-weight: normal;
+                    }
+                }
+                .paddingX16px{
+                    padding:0px 16px;
+                }
+                .description {
+                    font-family: YoonGothicPro740;
+                    font-size: 13px;
+                    font-weight: normal;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 1.54;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #6a6a6a;
+                    min-height: 50px;
+                }
+                .garnish{
+                    width: 14px;
+                    height: 2px;
+                    background-color: #0a7ec2;
+                }
+                .total {
+                    font-family: Lato;
+                    font-size: 15px;
+                    font-weight: 500;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 1;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #342b2b;
+    
+                    .collectGold {
+                        font-family: YoonGothicPro760;
+                        font-size: 15px;
+                        font-weight: normal;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: 1;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: #6a6a6a;
+                        margin-right: 5px;
+                    }
+    
+                    .manWon {
+                        font-family: YoonGothicPro760;
+                        font-weight: normal;
+                    }
+                }
+    
+                .calaulationDiv {
+                    display: flex;
+                    align-items: center;
+                    
+                    .divider {
+                        flex: 1 1 auto;
+                    }
+    
+                    .calculationTitle {
+                        font-size: 13px;
+                        font-weight: normal;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: 2.15;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: #342b2b;
+                    }
+    
+                    .profitTitle {
+                        font-family: YoonGothicPro760;
+                    }
+    
+                    .feeTitle {
+                        font-family: YoonGothicPro740;
+                    }
+    
+                    .taxTitle {
+                        font-family: YoonGothicPro740;
+                    }
+    
+                    .number {
+                        font-family: Lato;
+                        font-size: 15px;
+                        font-weight: normal;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: 1.87;
+                        letter-spacing: normal;
+                        text-align: right;
+                        color: #342b2b;
+                    }
+    
+                    .bold {
+                        font-weight: bold !important;
+                    }
+                }
+    
+                .detailDiv {
                     width: 100%;
-                    margin-bottom: 30px;
+                    margin-top: 30px;
+                    .detailButton {
+                        @include buttonSecondary;
+                        align-content: center;
+                        border-radius: 3px;
+                        background-color: #0a7ec2;
+                        font-family: YoonGothicPro740;
+                        font-size: 13px;
+                        font-weight: normal;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: normal;
+                        letter-spacing: normal;
+                        text-align: center;
+                        color: #ffffff;
+                        width: 100%;
+                        margin-bottom: 30px;
+                    }
                 }
             }
         }
     }
+    
+}
+
+@media (min-width: 320px) and (max-width:768px){
+    article {
+        padding-top: 50px;
+    
+        .body {
+            margin-bottom: 70px;
+    
+            p {
+                margin: 0px;
+                font-family: HGGGothicssi60g;
+                font-size: 28px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.57;
+                letter-spacing: normal;
+                text-align: center;
+                color: #ffffff;
+            }
+        }
+    
+        background: linear-gradient(180deg, $bg_primary 90%, $bg_secondary 10%);
+        margin-bottom: 100px;
+    
+        @media (max-width:1300px) {
+            .card {
+                
+                width: 300px;
+                min-width: 250px;
+                flex-basis: 40%;
+                margin-top:30px;
+            }
+        }
+    
+        .intereactionDiv {
+            .inputAndButtonDiv {
+                display:block !important;
+                height: 50px;
+            }
+    
+            .inputDiv {
+                display: inline-block;
+                position: relative;
+                height: 100%
+                
+            }
+    
+            .inputDiv::after {
+                position: absolute;
+                top: 0.5em;
+                right: 0px;
+                color: white;
+                content: "만원";
+                font-size: 1.5em;
+            }
+    
+            .input {
+                background-color: transparent;
+                color: #eeeeee;
+                outline: none;
+                outline-style: none;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                border-bottom: solid #eeeeee 1px;
+                padding: 3px 10px;
+                min-width: 288px;
+                width:100%;
+                height: 100%;
+                font-family: YoonGothicPro760;
+                font-size: 20px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 0.9;
+                letter-spacing: normal;
+                text-align: left;
+                color: rgba(255, 255, 255, 0.5);
+                padding:0px;
+                -moz-appearance:textfield;
+            }
+            .input::-webkit-outer-spin-button,
+            .input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+    
+            .calculate {
+                @include button;
+                background-color: #ffffff;
+                font-family: YoonGothicPro740;
+                font-size: 15px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1;
+                letter-spacing: normal;
+                text-align: center;
+                color: #032d57;
+                min-width:120px;
+                display:block;
+                width:100%;
+                margin-top :10px;
+                height:48px;
+            }
+    
+            .inputLable {
+                font-family: YoonGothicPro740;
+                font-size: 18px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1;
+                letter-spacing: normal;
+                text-align: left;
+                color: #ffffff;
+                margin: 0px;
+    
+            }
+        }
+    
+        .cardGroup {
+            padding-top: 50px;
+            max-width: 1500px;
+            margin:auto;
+            .card {
+                width: 300px;
+                min-width: 250px;
+                border-radius: 6px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15);
+                background-color: #ffffff;
+    
+                .title {
+                    font-family: YoonGothicPro760;
+                    font-size: 15px;
+                    font-weight: normal;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: center;
+                    color: #0a7ec2;
+                }
+    
+                .subTitle {
+                    font-family: Lato;
+                    font-size: 18px;
+                    font-weight: normal;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: center;
+                    color: #2e303b;
+    
+                    span {
+                        font-family: YoonGothicPro740;
+                        font-weight: normal;
+                    }
+                }
+                .paddingX16px{
+                    padding:0px 16px;
+                }
+                .description {
+                    font-family: YoonGothicPro740;
+                    font-size: 13px;
+                    font-weight: normal;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 1.54;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #6a6a6a;
+                    min-height: 50px;
+                }
+                .garnish{
+                    width: 14px;
+                    height: 2px;
+                    background-color: #0a7ec2;
+                }
+                .total {
+                    font-family: Lato;
+                    font-size: 15px;
+                    font-weight: 500;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 1;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #342b2b;
+    
+                    .collectGold {
+                        font-family: YoonGothicPro760;
+                        font-size: 15px;
+                        font-weight: normal;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: 1;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: #6a6a6a;
+                        margin-right: 5px;
+                    }
+    
+                    .manWon {
+                        font-family: YoonGothicPro760;
+                        font-weight: normal;
+                    }
+                }
+    
+                .calaulationDiv {
+                    display: flex;
+                    align-items: center;
+                    
+                    .divider {
+                        flex: 1 1 auto;
+                    }
+    
+                    .calculationTitle {
+                        font-size: 13px;
+                        font-weight: normal;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: 2.15;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: #342b2b;
+                    }
+    
+                    .profitTitle {
+                        font-family: YoonGothicPro760;
+                    }
+    
+                    .feeTitle {
+                        font-family: YoonGothicPro740;
+                    }
+    
+                    .taxTitle {
+                        font-family: YoonGothicPro740;
+                    }
+    
+                    .number {
+                        font-family: Lato;
+                        font-size: 15px;
+                        font-weight: normal;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: 1.87;
+                        letter-spacing: normal;
+                        text-align: right;
+                        color: #342b2b;
+                    }
+    
+                    .bold {
+                        font-weight: bold !important;
+                    }
+                }
+    
+                .detailDiv {
+                    width: 100%;
+                    margin-top: 30px;
+                    .detailButton {
+                        @include buttonSecondary;
+                        align-content: center;
+                        border-radius: 3px;
+                        background-color: #0a7ec2;
+                        font-family: YoonGothicPro740;
+                        font-size: 13px;
+                        font-weight: normal;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: normal;
+                        letter-spacing: normal;
+                        text-align: center;
+                        color: #ffffff;
+                        width: 100%;
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
+    
 }
