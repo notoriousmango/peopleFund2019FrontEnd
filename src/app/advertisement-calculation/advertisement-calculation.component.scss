@@ -2,14 +2,15 @@
 $bg_primary : #0a7ec2;
 $bg_secondary : white;
 
-@media (min-width:769px){
+@media (min-width:769px) {
     .calculationArticle {
         padding-top: 50px;
         background: linear-gradient(180deg, $bg_primary 90%, $bg_secondary 10%);
         margin-bottom: 100px;
+
         .body {
             margin-bottom: 70px;
-    
+
             p {
                 margin: 0px;
                 font-family: HGGGothicssi60g;
@@ -23,22 +24,21 @@ $bg_secondary : white;
                 color: #ffffff;
             }
         }
-    
-    
-    
+
+
+
         .intereactionDiv {
             .inputAndButtonDiv {
-    
+
                 height: 50px;
             }
-    
+
             .inputDiv {
                 display: inline-block;
                 position: relative;
                 height: 100%
-                
             }
-    
+
             .inputDiv::after {
                 position: absolute;
                 top: 0.5em;
@@ -47,7 +47,7 @@ $bg_secondary : white;
                 content: "만원";
                 font-size: 1.5em;
             }
-    
+
             .input {
                 background-color: transparent;
                 color: #eeeeee;
@@ -69,15 +69,16 @@ $bg_secondary : white;
                 letter-spacing: normal;
                 text-align: left;
                 color: rgba(255, 255, 255, 0.5);
-                padding:0px;
-                -moz-appearance:textfield;
+                padding: 0px;
+                -moz-appearance: textfield;
             }
+
             .input::-webkit-outer-spin-button,
             .input::-webkit-inner-spin-button {
                 -webkit-appearance: none;
                 margin: 0;
             }
-    
+
             .calculate {
                 @include button;
                 margin-left: 10px;
@@ -91,9 +92,9 @@ $bg_secondary : white;
                 letter-spacing: normal;
                 text-align: center;
                 color: #032d57;
-                min-width:120px;
+                min-width: 120px;
             }
-    
+
             .inputLable {
                 font-family: YoonGothicPro740;
                 font-size: 18px;
@@ -105,21 +106,22 @@ $bg_secondary : white;
                 text-align: left;
                 color: #ffffff;
                 margin: 0px;
-    
+
             }
         }
-    
+
         .cardGroupResolutionHigh {
             padding-top: 50px;
             max-width: 1500px;
-            margin:auto;
+            margin: auto;
+
             .card {
                 width: 300px;
                 min-width: 250px;
                 border-radius: 6px;
                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15);
                 background-color: #ffffff;
-    
+
                 .title {
                     font-family: YoonGothicPro760;
                     font-size: 15px;
@@ -131,7 +133,7 @@ $bg_secondary : white;
                     text-align: center;
                     color: #0a7ec2;
                 }
-    
+
                 .subTitle {
                     font-family: Lato;
                     font-size: 18px;
@@ -142,15 +144,17 @@ $bg_secondary : white;
                     letter-spacing: normal;
                     text-align: center;
                     color: #2e303b;
-    
+
                     span {
                         font-family: YoonGothicPro740;
                         font-weight: normal;
                     }
                 }
-                .paddingX16px{
-                    padding:0px 16px;
+
+                .paddingX16px {
+                    padding: 0px 16px;
                 }
+
                 .description {
                     font-family: YoonGothicPro740;
                     font-size: 13px;
@@ -163,11 +167,13 @@ $bg_secondary : white;
                     color: #6a6a6a;
                     min-height: 50px;
                 }
-                .garnish{
+
+                .garnish {
                     width: 14px;
                     height: 2px;
                     background-color: #0a7ec2;
                 }
+
                 .total {
                     font-family: Lato;
                     font-size: 15px;
@@ -178,7 +184,7 @@ $bg_secondary : white;
                     letter-spacing: normal;
                     text-align: left;
                     color: #342b2b;
-    
+
                     .collectGold {
                         font-family: YoonGothicPro760;
                         font-size: 15px;
@@ -191,21 +197,21 @@ $bg_secondary : white;
                         color: #6a6a6a;
                         margin-right: 5px;
                     }
-    
+
                     .manWon {
                         font-family: YoonGothicPro760;
                         font-weight: normal;
                     }
                 }
-    
+
                 .calaulationDiv {
                     display: flex;
                     align-items: center;
-                    
+
                     .divider {
                         flex: 1 1 auto;
                     }
-    
+
                     .calculationTitle {
                         font-size: 13px;
                         font-weight: normal;
@@ -216,19 +222,19 @@ $bg_secondary : white;
                         text-align: left;
                         color: #342b2b;
                     }
-    
+
                     .profitTitle {
                         font-family: YoonGothicPro760;
                     }
-    
+
                     .feeTitle {
                         font-family: YoonGothicPro740;
                     }
-    
+
                     .taxTitle {
                         font-family: YoonGothicPro740;
                     }
-    
+
                     .number {
                         font-family: Lato;
                         font-size: 15px;
@@ -240,15 +246,16 @@ $bg_secondary : white;
                         text-align: right;
                         color: #342b2b;
                     }
-    
+
                     .bold {
                         font-weight: bold !important;
                     }
                 }
-    
+
                 .detailDiv {
                     width: 100%;
                     margin-top: 30px;
+
                     .detailButton {
                         @include buttonSecondary;
                         align-content: center;
@@ -269,21 +276,22 @@ $bg_secondary : white;
                 }
             }
         }
-        .cardGroupResolutionLow{
-            display:none !important;
+
+        .cardGroupResolutionLow {
+            display: none !important;
             opacity: 0 !important;
         }
     }
-    
+
 }
 
-@media (min-width: 320px) and (max-width:768px){
+@media (min-width: 320px) and (max-width:768px) {
     .calculationArticle {
         padding-top: 50px;
-    
+
         .body {
             margin-bottom: 70px;
-    
+
             p {
                 margin: 0px;
                 font-family: HGGGothicssi60g;
@@ -297,24 +305,23 @@ $bg_secondary : white;
                 color: #ffffff;
             }
         }
-    
+
         background: $bg_primary;
         margin-bottom: 100px;
-    
-    
+
+
         .intereactionDiv {
             .inputAndButtonDiv {
-                display:block !important;
+                display: block !important;
                 height: 50px;
             }
-    
+
             .inputDiv {
                 display: inline-block;
                 position: relative;
                 height: 100%
-                
             }
-    
+
             .inputDiv::after {
                 position: absolute;
                 top: 0.5em;
@@ -323,7 +330,7 @@ $bg_secondary : white;
                 content: "만원";
                 font-size: 1.5em;
             }
-    
+
             .input {
                 background-color: transparent;
                 color: #eeeeee;
@@ -335,7 +342,7 @@ $bg_secondary : white;
                 border-bottom: solid #eeeeee 1px;
                 padding: 3px 10px;
                 min-width: 288px;
-                width:100%;
+                width: 100%;
                 height: 100%;
                 font-family: YoonGothicPro760;
                 font-size: 20px;
@@ -346,15 +353,16 @@ $bg_secondary : white;
                 letter-spacing: normal;
                 text-align: left;
                 color: rgba(255, 255, 255, 0.5);
-                padding:0px;
-                -moz-appearance:textfield;
+                padding: 0px;
+                -moz-appearance: textfield;
             }
+
             .input::-webkit-outer-spin-button,
             .input::-webkit-inner-spin-button {
                 -webkit-appearance: none;
                 margin: 0;
             }
-    
+
             .calculate {
                 @include button;
                 background-color: #ffffff;
@@ -367,13 +375,13 @@ $bg_secondary : white;
                 letter-spacing: normal;
                 text-align: center;
                 color: #032d57;
-                min-width:120px;
-                display:block;
-                width:100%;
-                margin-top :10px;
-                height:48px;
+                min-width: 120px;
+                display: block;
+                width: 100%;
+                margin-top: 10px;
+                height: 48px;
             }
-    
+
             .inputLable {
                 font-family: YoonGothicPro740;
                 font-size: 18px;
@@ -385,46 +393,54 @@ $bg_secondary : white;
                 text-align: left;
                 color: #ffffff;
                 margin: 0px;
-    
+
             }
         }
-        .cardGroupResolutionHigh{
-            display:none !important;
+
+        .cardGroupResolutionHigh {
+            display: none !important;
         }
-        
+
         .cardGroupResolutionLow {
-            span.swiper-pagination-bullet.swiper-pagination-bullet-active{
-                background:white !important;
+            span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+                background: white !important;
             }
+
             padding-top: 50px;
             max-width: 1500px;
             height:600px;
             margin:auto;
+
             swiper {
-                height: 450px;
+                height: 500px;
                 min-width: 320px;
             }
+
+            card {
+                min-width: 300px;
+            }
+
             .swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            background: #fff;
-            /* Center slide text vertically */
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            -webkit-justify-content: center;
-            justify-content: center;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            -webkit-align-items: center;
-            align-items: center;
-            background-color: $bg_primary;
-            height:400px;
+                text-align: center;
+                font-size: 18px;
+                background: #fff;
+                /* Center slide text vertically */
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                -webkit-align-items: center;
+                align-items: center;
+                background-color: $bg_primary;
+                height: 500px;
             }
         }
     }
-    
+
 }

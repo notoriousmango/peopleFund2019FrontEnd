@@ -18,5 +18,5 @@
         <button (click)="openHome()">{{buttonText}}</button>
     </div>
     
-    <img class="scrollDown" srcset="../../assets/img/img_scrolldown.png 1x, ../../assets/img/img_scrolldown@2x.png 2x" src="../../assets/img/img_scrolldown.png" (click)="scrollButtonClicked()" alt="Scroll to the calculate my benefit section">
+    <img class="scrollDown" [@scrollOpacityAnimation]="floatButtonState" [@scrollDisplayAnimation]="floatButtonState" srcset="../../assets/img/img_scrolldown.png 1x, ../../assets/img/img_scrolldown@2x.png 2x" src="../../assets/img/img_scrolldown.png" (click)="scrollButtonClicked()" alt="Scroll to the calculate my benefit section">
 </div>

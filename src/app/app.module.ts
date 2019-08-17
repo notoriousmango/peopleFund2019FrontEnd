@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { AdvertisementTopComponent } from './advertisement-top/advertisement-top.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AdvertisementMiddleComponent } from './advertisement-middle/advertisement-middle.component';
 import { AdvertisementFooterComponent } from './advertisement-footer/advertisement-footer.component';
 import { AdvertisementChatComponent } from './advertisement-chat/advertisement-chat.component';
@@ -31,6 +32,7 @@ import { ProductCardComponent } from './advertisement-calculation/productCard/pr
       HttpClientModule,
       FormsModule,
       NgxUsefulSwiperModule,
+      BrowserAnimationsModule,
    ],
    providers: [
       HttpClientModule
