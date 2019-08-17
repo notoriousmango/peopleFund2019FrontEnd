@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-advertisement-top',
@@ -14,7 +14,7 @@ export class AdvertisementTopComponent implements OnInit {
   public bodyBefore = '자산을 키우는 새로운 투자 습관,';
   public bodyText = '피플펀드를 만나보세요';
   public buttonText = '1분만에 투자 시작하기';
-
+  @Output() scrollButton: EventEmitter<any> = new EventEmitter();
   constructor() { }
 
   ngOnInit() {
@@ -23,5 +23,7 @@ export class AdvertisementTopComponent implements OnInit {
   public openHome() {
     window.open(`https://peoplefund.co.kr`, '_blank');
   }
-
+  public scrollButtonClicked() {
+    this.scrollButton.emit(true);
+  }
 }

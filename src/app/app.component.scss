@@ -2,15 +2,18 @@
     background-position: center;
     transition: background 0.8s;
 }
+
 .ripple:hover {
-background: #e2e2e2 radial-gradient(circle, transparent 1%, #e2e2e2 1%) center/15000%;
+    background: #e2e2e2 radial-gradient(circle, transparent 1%, #e2e2e2 1%) center/15000%;
 }
+
 .ripple:active {
-background-color: #f3f3f3;
-background-size: 100%;
-transition: background 0s;
+    background-color: #f3f3f3;
+    background-size: 100%;
+    transition: background 0s;
 }
-.button{
+
+.button {
     @extend .ripple;
     border: none;
     color: white;
@@ -21,4 +24,14 @@ transition: background 0s;
     font-size: 16px;
     border-radius: 3px;
     color: black;
+    &:hover {
+        cursor: pointer;
+    }
+    &:focus {
+        outline: 0;
+    }
+}
+.calculationNavigation{
+    width:100%;
+    height:100px;
 }

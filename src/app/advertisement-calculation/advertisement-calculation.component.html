@@ -1,13 +1,13 @@
 
 <article>
-  <div fxLayout="column wrap" fxLayoutAlign="center center">
+  <div class="body" fxLayout="column wrap" fxLayoutAlign="center center">
     <p>{{titleFist}}</p>
     <p>{{titleSecond}}</p>
   </div>
-  <div fxLayout="column" fxLayoutAlign="center center">
+  <div class="intereactionDiv" fxLayout="column" fxLayoutAlign="center center">
     <div>
-      <p>투자금액</p>
-      <div fxLayout="row">
+      <p class="inputLable">투자금액</p>
+      <div class="inputAndButtonDiv" fxLayout="row" fxLayoutAlign="center center">
         <div class="inputDiv">
             <input class="input" type="number" min="10" max="1000" step="10" [(ngModel)]="investMoney">
         </div>
@@ -15,23 +15,28 @@
       </div>
     </div>
   </div>
-  <div fxLayout="row wrap" fxLayoutAlign="space-around start">
+  <div class="cardGroup" fxLayout="row wrap" fxLayoutAlign="space-around start">
     <div class="card" *ngFor="let product of products">
       <p class="title">{{product.title}}</p>
-      <p class="subTitle"><span>연</span> {{product.interest_rate}} / {{product.month}}개월</p>
-      <p class="description">{{product.description}}</p>
-      <p class="total"><span class="collectGold">모집금</span> {{(product.invest_amount / manWon)| moneyToString}} <span class="manWon">만원</span> </p>
-      <app-progressBar [width]="product.percentage"></app-progressBar>
-      <div class="calaulationDiv">
+      <p class="subTitle"><span>연</span> {{product.interest_rate}}% / {{product.month}}개월</p>
+      <div fxLayout="row" fxLayoutAlign="center center">
+        <div  class="garnish"></div>
+      </div>
+      <p class="description paddingX16px">{{product.description}}</p>
+      <p class="total paddingX16px"><span class="collectGold">모집금</span> {{(product.invest_amount / manWon)| moneyToString}} <span class="manWon">만원</span> </p>
+      <div class="paddingX16px">
+        <app-progressBar [width]="product.percentage" ></app-progressBar>
+      </div>
+      <div class="calaulationDiv paddingX16px">
           <span class="profitTitle calculationTitle">예상 총 수익</span><span class="divider"></span> <span class="bold number">{{product.expectedProfit |moneyToString}}</span><span class="unit">원</span>
       </div>
-      <div class="calaulationDiv">
+      <div class="calaulationDiv paddingX16px">
           <span class="feeTitle calculationTitle">수수료</span><span class="divider"></span> <span class="number">{{product.fee}}</span><span class="unit">원</span>
       </div>
-      <div class="calaulationDiv">
+      <div class="calaulationDiv paddingX16px">
           <span class="taxTitle calculationTitle">세금</span> <span class="divider"></span> <span class="number">{{product.tax}}</span><span class="unit">원</span>
       </div>
-      <div class="detailDiv" fxLayout="row" fxLayoutAlign="center center">
+      <div class="detailDiv paddingX16px" fxLayout="row" fxLayoutAlign="center center">
           <button class="detailButton" (click)="openURL(product.url)">{{buttonString}}</button>
       </div>
     </div> 
