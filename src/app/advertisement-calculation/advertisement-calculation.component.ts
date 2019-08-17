@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit, ElementRef, ChangeDetectorRef, AfterViewChecked, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, AfterViewInit, ElementRef, ChangeDetectorRef, AfterViewChecked, ViewEncapsulation, ViewChild } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
@@ -19,6 +19,10 @@ export class AdvertisementCalculationComponent implements OnInit, AfterViewInit 
   public manWon = 10000;
   private readonly taxRate = 0.275;
   public products: Product[];
+  public errorString = '';
+  private readonly maxInvest = 1000;
+  private readonly minInvest = 10;
+  @ViewChild('investAmount', {static: true}) investAmountInput: ElementRef;
   config: SwiperOptions = {
     pagination: { el: '.swiper-pagination', clickable: true },
     spaceBetween: 30
@@ -32,10 +36,20 @@ export class AdvertisementCalculationComponent implements OnInit, AfterViewInit 
       this.calculateInvestment(this.products, this.investMoney);
     });
   }
-  ngAfterViewInit(){
+  ngAfterViewInit() {
   }
 
   public calculateInvestment(products: Product[], investMoney: number) {
+    if (investMoney < this.minInvest) {
+      this.errorString = '투자금은 10만 원 미만일 수 없습니다.';
+      this.investMoney = this.minInvest;
+      return;
+    }
+    if (investMoney % 10 !== 0) {
+      this.errorString = '10만 원 단위로 투자 가능합니다';
+      return;
+    }
+    this.errorString = '';
     products.forEach(product => {
       product.percentage = Math.round((product.invest_amount / product.total_amount) * 100);
       const profit = investMoney * this.manWon * (product.interest_rate / 100) * (product.month / 12);
@@ -44,7 +58,26 @@ export class AdvertisementCalculationComponent implements OnInit, AfterViewInit 
       product.expectedProfit = Math.round(profit - product.fee - product.tax);
     });
   }
-  public openURL(url: string) {
-    window.open(`https://${url}`, '_blank');
+  public valuechange(event) {
+    const newValue = event.target.value;
+    if (newValue === '') {
+      return;
+    }
+    if (Number(newValue) === 0) {
+      if (this.investAmountInput.nativeElement.value.length > 1) {
+        this.investAmountInput.nativeElement.value = '0';
+      }
+      this.investMoney = 0;
+      return;
+    }
+    if (newValue > this.maxInvest) {
+      this.errorString = '투자금은 1000만 원을 초과할 수 없습니다';
+      this.investMoney = this.maxInvest;
+    } else {
+      if (Number(newValue) > 0) {
+        this.investAmountInput.nativeElement.value = Number(newValue).toString();
+      }
+      this.errorString = '';
+    }
   }
 }

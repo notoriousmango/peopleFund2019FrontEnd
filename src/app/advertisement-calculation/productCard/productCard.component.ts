@@ -15,5 +15,7 @@ export class ProductCardComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  public openURL(url: string) {
+    window.open(`https://${url}`, '_blank');
+  }
 }

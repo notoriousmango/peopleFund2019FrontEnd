@@ -9,9 +9,10 @@
       <p class="inputLable">투자금액</p>
       <div class="inputAndButtonDiv" fxLayout="row" fxLayoutAlign="center center">
         <div class="inputDiv">
-            <input class="input" type="number" min="10" max="1000" step="10" [(ngModel)]="investMoney">
+            <input class="input" #investAmount type="number" min="10" max="1000" step="10" [(ngModel)]="investMoney" (keyup)="valuechange($event)" >
+            <p class="errorString">{{errorString}}</p>  
         </div>
-          <button class="calculate" (click)="calculateInvestment(products,investMoney)">계산하기</button>
+        <button class="calculate" (click)="calculateInvestment(products,investMoney)">계산하기</button>
       </div>
     </div>
   </div>

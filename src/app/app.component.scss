@@ -38,11 +38,9 @@
     font-size: 16px;
     border-radius: 3px;
     color: black;
-
     &:hover {
-        cursor: pointer;
+        cursor: pointer !important;
     }
-
     &:focus {
         outline: 0;
     }
@@ -51,6 +49,7 @@
 @mixin button {
     @include ripple;
     @include buttonBase;
+    
 }
 
 @mixin buttonSecondary {
