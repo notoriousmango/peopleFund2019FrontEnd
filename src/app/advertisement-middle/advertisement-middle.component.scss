@@ -1,8 +1,9 @@
 $font_primary : #2e303b;
 $font_secondary : #0a7ec2;
 $sunYellow : #f8e71c;
-@media (min-width:769px){
-    #mainBody{
+
+@media (min-width:769px) {
+    #mainBody {
         font-weight: normal;
         font-style: normal;
         font-stretch: normal;
@@ -10,7 +11,8 @@ $sunYellow : #f8e71c;
         text-align: center;
         color: $font_primary;
         margin-bottom: 100px;
-        .highlight{
+
+        .highlight {
             background: $sunYellow;
             position: relative;
             height: 1em;
@@ -18,24 +20,28 @@ $sunYellow : #f8e71c;
             top: -57px;
             z-index: 0;
         }
-        .title{
+
+        .title {
             font-family: HGGGothicssi60g;
             font-size: 28px;
             line-height: 1.57;
             z-index: 1;
         }
-        .body{
+
+        .body {
             font-family: YoonGothicPro760;
             font-size: 18px;
             line-height: 2.11;
             margin-bottom: 50px;
-            strong{
+
+            strong {
                 font-family: Lato;
                 font-size: 24px;
                 color: $font_secondary
             }
         }
-        .graph{
+
+        .graph {
             height: 296.9px;
         }
     }
@@ -43,8 +49,8 @@ $sunYellow : #f8e71c;
 }
 
 
-@media (min-width: 320px) and (max-width:768px){
-    #mainBody{
+@media (min-width: 320px) and (max-width:768px) {
+    #mainBody {
         font-weight: normal;
         font-style: normal;
         font-stretch: normal;
@@ -52,37 +58,42 @@ $sunYellow : #f8e71c;
         text-align: center;
         color: $font_primary;
         margin-bottom: 100px;
-        padding-top : 100px;
-        .highlight{
+        padding-top: 100px;
+
+        .highlight {
             background: $sunYellow;
             position: relative;
             height: 1em;
             width: 90vw;
-            max-width:300px;
+            max-width: 300px;
             top: -25px;
             z-index: 0;
         }
-        .title{
+
+        .title {
             font-family: HGGGothicssi60g;
             font-size: calc(18px + .5vw);
             line-height: 1.57;
             z-index: 1;
-            margin:0px;
+            margin: 0px;
         }
-        .body{
+
+        .body {
             font-family: YoonGothicPro760;
             font-size: calc(15px + .5vw);
             line-height: 2.11;
             margin-bottom: 50px;
-            strong{
+
+            strong {
                 font-family: Lato;
                 font-size: 24px;
                 color: $font_secondary
             }
         }
-        .graph{
+
+        .graph {
             width: 80vw;
-            min-width:275px;
+            min-width: 275px;
         }
     }
 }

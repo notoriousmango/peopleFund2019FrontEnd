@@ -1,12 +1,13 @@
 @import '../app.component.scss';
 $text_primary_color: #ffffff;
 $invest_button_color : #108fda;
-@media (min-width:769px){
-    footer{
+
+@media (min-width:769px) {
+    footer {
         background-image: url('../../assets/img/img_btmbg.png');
         background-size: 100%;
         height: 224px;
-        background-size: cover;      
+        background-size: cover;
         background-attachment: fixed;
         background-position: center 500px;
         background-repeat: no-repeat;
@@ -16,31 +17,36 @@ $invest_button_color : #108fda;
         letter-spacing: normal;
         text-align: center;
         color: $text_primary_color;
-        .footerTitleEnglish{
+
+        .footerTitleEnglish {
             font-family: YoonGothicPro740;
             font-size: 18px;
             line-height: 0.89;
         }
-        .footerTitleKorean{
+
+        .footerTitleKorean {
             font-family: HGGGothicssi60g;
             font-size: 28px;
             line-height: 1.29;
         }
-        .logo{
+
+        .logo {
             width: auto;
-            max-width:200px;
+            max-width: 200px;
         }
     }
-    .startInvestButton{
-        display:none;
+
+    .startInvestButton {
+        display: none;
     }
 }
-@media (min-width: 320px) and (max-width:768px){
-    footer{
+
+@media (min-width: 320px) and (max-width:768px) {
+    footer {
         background-image: url('../../assets/img/img_btmbg.png');
         background-size: 100%;
         height: 224px;
-        background-size: cover;      
+        background-size: cover;
         background-attachment: fixed;
         background-position: center center;
         background-repeat: no-repeat;
@@ -50,24 +56,28 @@ $invest_button_color : #108fda;
         letter-spacing: normal;
         text-align: center;
         color: $text_primary_color;
-        .footerTitleEnglish{
+
+        .footerTitleEnglish {
             font-family: YoonGothicPro740;
             font-size: calc(13px + 0.5vw);
             line-height: 0.89;
         }
-        .footerTitleKorean{
+
+        .footerTitleKorean {
             width: 75vw;
             font-family: HGGGothicssi60g;
             font-size: calc(18px + 0.5vw);
             line-height: 1.29;
         }
-        .logo{
+
+        .logo {
             width: auto;
         }
     }
-    .startInvestButton{
+
+    .startInvestButton {
         @include buttonSecondary;
-        width:100%;
+        width: 100%;
         background-color: $invest_button_color;
         font-family: YoonGothicPro760;
         font-size: 14px;
@@ -79,10 +89,11 @@ $invest_button_color : #108fda;
         text-align: center;
         color: #ffffff;
         border-radius: 0px;
-        height:50px;
+        height: 50px;
     }
-    .btn_arrow{
-        float:right;
+
+    .btn_arrow {
+        float: right;
         width: 10px;
         height: 20px;
     }

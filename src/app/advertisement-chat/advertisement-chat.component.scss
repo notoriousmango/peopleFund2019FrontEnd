@@ -1,5 +1,6 @@
 $yellow : #fff7d9;
 $blue :#d9f1ff;
+
 :host {
     display: flex;
     justify-content: center;
@@ -8,13 +9,15 @@ $blue :#d9f1ff;
 
 article {
     border: solid 4px #0a7ec2;
-    min-width:300px;
+    min-width: 300px;
     margin: 100px 50px;
-    .titleDiv{
+
+    .titleDiv {
         position: relative;
         top: -50px;
         background: white;
         padding: 0px 30px;
+
         .title {
             font-family: HGGGothicssi60g;
             font-size: 28px;
@@ -25,12 +28,14 @@ article {
             letter-spacing: normal;
             text-align: center;
             color: #0a7ec2;
-            margin:0px;
+            margin: 0px;
         }
     }
-    .chatGroup{
-        width:100%;
+
+    .chatGroup {
+        width: 100%;
     }
+
     .chatBody {
         margin: 0px 40px;
         font-family: YoonGothicPro740;
@@ -45,25 +50,31 @@ article {
         padding: 10px 30px 20px 20px;
         border-radius: 10px;
     }
-    .yellowBody{
+
+    .yellowBody {
         background-color: $yellow;
     }
-    .blueBody{
-        background-color : $blue;
+
+    .blueBody {
+        background-color: $blue;
     }
-    .rightTail{
+
+    .rightTail {
         margin-right: 50px;
-        margin-bottom:10px;
+        margin-bottom: 10px;
         margin-left: auto;
         display: block;
     }
-    .leftTail{
+
+    .leftTail {
         margin-left: 50px;
-        margin-bottom:10px;
+        margin-bottom: 10px;
     }
-    .infoBox{
+
+    .infoBox {
         margin: 0px 40px;
         margin-bottom: 20px;
+
         .info {
             font-family: YoonGothicPro740;
             font-size: 13px;
@@ -74,29 +85,33 @@ article {
             letter-spacing: normal;
             text-align: left;
             color: #6a6a6a;
-            margin:0px;
+            margin: 0px;
         }
-        .infoRight{
+
+        .infoRight {
             margin-right: 10px;
         }
-        .infoLeft{
+
+        .infoLeft {
             margin-left: 10px;
         }
-        img{
+
+        img {
             width: 50px;
             height: 50px;
         }
     }
 }
 
-@media (min-width: 320px) and (max-width:768px){
-    article{
-        .titleDiv{
+@media (min-width: 320px) and (max-width:768px) {
+    article {
+        .titleDiv {
             position: relative;
             top: -30px;
             background: white;
             padding: 0px 30px;
-            .title{
+
+            .title {
                 font-family: HGGGothicssi60g;
                 font-size: calc(18px + 0.5vw);
                 font-weight: normal;
@@ -106,7 +121,7 @@ article {
                 letter-spacing: normal;
                 text-align: center;
                 color: #0a7ec2;
-                margin:0px;
+                margin: 0px;
             }
         }
     }
