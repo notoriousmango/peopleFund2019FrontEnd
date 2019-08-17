@@ -15,7 +15,7 @@
       </div>
     </div>
   </div>
-  <div class="cardGroup" fxLayout="row wrap" fxLayoutAlign="space-around start">
+  <div class="cardGroupResolutionHigh" fxLayout="row wrap" fxLayoutAlign="space-around start">
     <div class="card" *ngFor="let product of products">
       <p class="title">{{product.title}}</p>
       <p class="subTitle"><span>연</span> {{product.interest_rate}}% / {{product.month}}개월</p>
@@ -40,5 +40,17 @@
           <button class="detailButton" (click)="openURL(product.url)">{{buttonString}}</button>
       </div>
     </div> 
-  </div>     
+  </div>    
+  <div class="cardGroupResolutionLow">
+      <swiper [config]="config">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" *ngFor="let product of products">
+              Slide 1
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- Add Arrows -->
+        </swiper>
+  </div> 
 </article>

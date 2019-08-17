@@ -11,7 +11,7 @@ import { AdvertisementChatComponent } from './advertisement-chat/advertisement-c
 import { AdvertisementCalculationComponent } from './advertisement-calculation/advertisement-calculation.component';
 import { MoneyToStringPipe } from './moneyToString.pipe';
 import { ProgressBarComponent } from './advertisement-calculation/progressBar/progressBar.component';
-
+import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
 @NgModule({
    declarations: [
       AppComponent,
@@ -28,6 +28,7 @@ import { ProgressBarComponent } from './advertisement-calculation/progressBar/pr
       FlexLayoutModule,
       HttpClientModule,
       FormsModule,
+      NgxUsefulSwiperModule,
    ],
    providers: [
       HttpClientModule

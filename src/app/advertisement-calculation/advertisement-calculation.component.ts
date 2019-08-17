@@ -1,13 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit, ElementRef, ChangeDetectorRef, AfterViewChecked } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
+import Swiper, { SwiperOptions } from 'swiper';
+
 @Component({
   selector: 'app-advertisement-calculation',
   templateUrl: './advertisement-calculation.component.html',
   styleUrls: ['./advertisement-calculation.component.scss']
 })
-export class AdvertisementCalculationComponent implements OnInit {
+export class AdvertisementCalculationComponent implements OnInit, AfterViewInit {
   public titleFist = '피플펀드 대표 상품의';
   public titleSecond = '투자 수익을 확인해보세요.';
   public buttonString = '상품 자세히 보기';
@@ -16,7 +18,11 @@ export class AdvertisementCalculationComponent implements OnInit {
   public manWon = 10000;
   private readonly taxRate = 0.275;
   public products: Product[];
-  constructor(private http: HttpClient) {
+  config: SwiperOptions = {
+    pagination: { el: '.swiper-pagination', clickable: true },
+    spaceBetween: 30
+  };
+  constructor(private http: HttpClient, private elementRef: ElementRef, private ref: ChangeDetectorRef) {
   }
 
   ngOnInit() {
@@ -25,6 +31,9 @@ export class AdvertisementCalculationComponent implements OnInit {
       this.calculateInvestment(this.products, this.investMoney);
     });
   }
+  ngAfterViewInit(){
+  }
+
   public calculateInvestment(products: Product[], investMoney: number) {
     products.forEach(product => {
       product.percentage = Math.round((product.invest_amount / product.total_amount) * 100);
